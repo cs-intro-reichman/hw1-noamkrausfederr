@@ -7,7 +7,7 @@ public class Bill3 {
 		int bill = Integer.parseInt(args[3]);
 		//Calculates how much each person should pay
 		double finalBill = Math.ceil((double)bill/3); 
-		System.out.println("Dear " + name1 + ", " + name2 + ", and " + name3 + ": pay " + finalBill + " Shekels each.");
+		System.out.println("Dear " + name1 + ", " + name2 + ", and " + name3 + " pay " + finalBill + " Shekels each.");
 
 	}
 }
