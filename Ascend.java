@@ -9,26 +9,22 @@ public class Ascend {
 		int b = (int)(Math.random()*lim);
 		int c = (int)(Math.random()*lim);
 
-		System.out.print(a + " ");
-		System.out.print(b + " ");
-		System.out.print(c);
-		System.out.println();
+		System.out.println(a + " " + b + " " + c);
 
 		//Finding the smaller number between the first two numbers
 		int min = Math.min(a, b);
 		//Find the smaller number between the minimum of the first two numbers, and the third number
-		int min2 = Math.min(min, c);
-		System.out.print(min2 + " ");
+		int minResult = Math.min(min, c);
 		
 		//Finding the bigger number between the first two numbers
 		int max = Math.max(a,b);
 		//Find the bigger number between the maximum of the first two numbers, and the third number
-		int max2 = Math.max(max,c);
-
+		int maxResult = Math.max(max,c);
 		//Take the sum of the 3 random numbers and deduct the sum of the maximum and the minimum numbers
 		int middleNum = (a+b+c) - (max+min);
-		System.out.print(middleNum + " ");
-		System.out.println(max2);
+
+		System.out.println(minResult + " " + middleNum + " " + maxResult);
+
 
 	}
 }
